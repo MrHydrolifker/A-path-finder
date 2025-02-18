@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A* Algorithm Path Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>A* Algorithm Path Finder</h1>
+
+    <!-- Table for Node Inputs -->
+    <table id="graphTable">
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Heuristic (h)</th>
+                <th>Path Cost (g)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+    <button onclick="addRow()">Add Row</button>
+
+    <!-- Start and End Node Inputs -->
+    <div class="inputs">
+        <label>Start Node: <input type="text" id="startNode"></label>
+        <label>End Node: <input type="text" id="endNode"></label>
+    </div>
+
+    <button onclick="runAStar()">Find Path</button>
+
+    <!-- Display Path Output -->
+    <h2 id="pathOutput"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
